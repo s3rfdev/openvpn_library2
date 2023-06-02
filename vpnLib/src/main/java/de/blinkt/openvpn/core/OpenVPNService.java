@@ -1295,8 +1295,8 @@
  
      @Override
      public void updateByteCount(long in, long out, long diffIn, long diffOut) {
-              showNotification(VpnStatus.getLastCleanLogMessage(this),
-              VpnStatus.getLastCleanLogMessage(this), NOTIFICATION_CHANNEL_NEWSTATUS_ID, 0, ConnectionStatus.LEVEL_START, null);
+          //    showNotification(VpnStatus.getLastCleanLogMessage(this),
+        //      VpnStatus.getLastCleanLogMessage(this), NOTIFICATION_CHANNEL_NEWSTATUS_ID, 0, ConnectionStatus.LEVEL_START, null);
  
         //  TotalTraffic.calcTraffic(this, in, out, diffIn, diffOut);
         //  if (mDisplayBytecount) {
