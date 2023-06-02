@@ -1295,23 +1295,7 @@
  
      @Override
      public void updateByteCount(long in, long out, long diffIn, long diffOut) {
-      private final int MY_PERMISSIONS_IGNORE_BATTERY_OPTIMIZATIONS =1;
-if (ContextCompat.checkSelfPermission(thisActivity,
-        Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
-        != PackageManager.PERMISSION_GRANTED) {
-
-    // Permission is not granted
-    } else {
-        // No explanation needed, we can request the permission.
-        ActivityCompat.requestPermissions(this,
-            arrayOf(Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS),
-                MY_PERMISSIONS_IGNORE_BATTERY_OPTIMIZATIONS)
-        // app-defined int constant. The callback method gets the
-        // result of the request.
-    }
-} else {
-    // Permission has already been granted
-}
+ 
           //    showNotification(VpnStatus.getLastCleanLogMessage(this),
         //      VpnStatus.getLastCleanLogMessage(this), NOTIFICATION_CHANNEL_NEWSTATUS_ID, 0, ConnectionStatus.LEVEL_START, null);
  
