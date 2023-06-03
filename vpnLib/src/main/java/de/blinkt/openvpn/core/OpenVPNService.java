@@ -1269,8 +1269,8 @@
              // CONNECTED
              // Does not work :(
              String msg = getString(resid);
-             showNotification(VpnStatus.getLastCleanLogMessage(this),
-                     VpnStatus.getLastCleanLogMessage(this), channel, 0, level, intent);
+            //  showNotification(VpnStatus.getLastCleanLogMessage(this),
+            //          VpnStatus.getLastCleanLogMessage(this), channel, 0, level, intent);
  
          }
      }
@@ -1364,7 +1364,7 @@
  
      public void requestInputFromUser(int resid, String needed) {
          VpnStatus.updateStateString("NEED", "need " + needed, resid, LEVEL_WAITING_FOR_USER_INPUT);
-         showNotification(getString(resid), getString(resid), NOTIFICATION_CHANNEL_NEWSTATUS_ID, 0, LEVEL_WAITING_FOR_USER_INPUT, null);
+        // showNotification(getString(resid), getString(resid), NOTIFICATION_CHANNEL_NEWSTATUS_ID, 0, LEVEL_WAITING_FOR_USER_INPUT, null);
      }
  
  
