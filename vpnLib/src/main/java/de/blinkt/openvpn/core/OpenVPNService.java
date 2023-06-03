@@ -594,8 +594,8 @@
          // Always show notification here to avoid problem with startForeground timeout
          VpnStatus.logInfo(R.string.building_configration);
          VpnStatus.updateStateString("VPN_GENERATE_CONFIG", "", R.string.building_configration, ConnectionStatus.LEVEL_START);
-         showNotification(VpnStatus.getLastCleanLogMessage(this),
-                 VpnStatus.getLastCleanLogMessage(this), NOTIFICATION_CHANNEL_NEWSTATUS_ID, 0, ConnectionStatus.LEVEL_START, null);
+        //  showNotification(VpnStatus.getLastCleanLogMessage(this),
+        //          VpnStatus.getLastCleanLogMessage(this), NOTIFICATION_CHANNEL_NEWSTATUS_ID, 0, ConnectionStatus.LEVEL_START, null);
  
          if (intent != null && intent.hasExtra(getPackageName() + ".profileUUID")) {
              String profileUUID = intent.getStringExtra(getPackageName() + ".profileUUID");
